@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0b0b0b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.hero{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+    url("https://images.unsplash.com/photo-1494905998402-395d579af36f?q=80&w=1600&auto=format&fit=crop");
+    
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar{
+    width: 100%;
+    padding: 25px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Orbitron', sans-serif;
+    color: #ff2b2b;
+    letter-spacing: 3px;
+}
+
+.menu{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #ff2b2b;
+}
+
+
+
+.hero-content{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 80px;
+    max-width: 700px;
+}
+
+.hero-content h2{
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero-content span{
+    color: #ff2b2b;
+}
+
+.hero-content p{
+    font-size: 18px;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: fit-content;
+
+    padding: 15px 35px;
+
+    background: #ff2b2b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: #ff4f4f;
+    transform: translateY(-3px);
+}
+
+
+
+section{
+    padding: 100px 80px;
+}
+
+.section-title{
+    margin-bottom: 40px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff2b2b;
+}
+
+
+
+.sobre p{
+    max-width: 800px;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+
+.cards-valores{
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card{
+    background: #141414;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    border-color: #ff2b2b;
+}
+
+.card h3{
+    margin-bottom: 15px;
+    color: #ff2b2b;
+}
+
+
+
+.carros-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.car-card{
+    background: #141414;
+    border-radius: 15px;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.car-card:hover{
+    transform: scale(1.03);
+}
+
+.car-card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.car-card h3{
+    padding: 20px 20px 10px;
+    color: #ff2b2b;
+}
+
+.car-card p{
+    padding: 0 20px 20px;
+    color: #cfcfcf;
+}
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th{
+    background: #ff2b2b;
+    padding: 18px;
+}
+
+td{
+    padding: 18px;
+    border-bottom: 1px solid #222;
+    background: #141414;
+}
+
+
+
+.contato p{
+    margin-bottom: 15px;
+    color: #cfcfcf;
+}
+
+
+
+@media(max-width: 900px){
+
+    .navbar{
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-content{
+        padding: 20px;
+    }
+
+    .hero-content h2{
+        font-size: 45px;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .menu{
+        gap: 20px;
+    }
+
+}
